@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Day2</title>
+<!-- Classes are reusable styles that can be added to HTML elements-->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!--import google fonts-->
+<!-- ***CSS Google Fonts Import***
+
+Google Fonts : https://fonts.google.com/  is a free library of web fonts that you can use in your CSS by referencing the font's URL.
+
+from the above we can use the Lobster font in your CSS by using 'Lobster' as the 'FAMILY_NAME' as in the following example:
+
+' font-family: FAMILY_NAME, GENERIC_NAME; '.
+
+The GENERIC_NAME is optional, and is a fallback font in case the other specified font is not available.
+-->
+
+<!-- WARNING: Family names are case-sensitive and need to be wrapped in quotes if there is a space in the name. For example,
+ you need quotes to use the "Open Sans" font, but not to use the Lobster font.  -->
+
+<style>
+  h2{
+    font-family:Lobster,monospace;
+  }
+  .red-text{
+    color: red;
+  }
+  .blue-text{
+    color: blue;
+    font-family:Helvetica;
+  }
+  p{
+    font-size: 18px;
+    font-family: sans-serif;
+  }
+  .lite-border{
+    border-color: green;
+    border-width:10px;
+    border-style: solid;
+  }
+</style>
+<h2 class="red-text">CatPhotoApp</h2>
+
+<p class="blue-text lite-border"> *** GENRIC_FONTS ***
+
+ <br>There are several default fonts that are available in all browsers.
+ These generic font families include monospace, serif and sans-serif
+<br>When one font isn't available, you can tell the browser to "degrade" to another font.
+
+For example, if you wanted an element to use the Helvetica font,
+but degrade to the sans-serif font when Helvetica wasn't available, you will specify it as follows:
+
+<br><i>' p {
+   <br>font-family: Helvetica, sans-serif;
+ <br>} '</i>
+
+ <br>Generic font family names are not case-sensitive. Also, they do not need quotes because they are CSS keywords.
+
+
+</p>
+
+<h2> Applying Multiple Classes</h2>
+Remember that you can apply multiple classes to an element using its class attribute, by separating each class name with a space. For example:
+&lt img class="class1 class2" &gt
+<p class="blue-text">
+  styling the app using Classes
+</p>
+</html>
