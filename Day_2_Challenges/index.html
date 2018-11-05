@@ -3,6 +3,8 @@
 <title>Day2</title>
 <!-- Classes are reusable styles that can be added to HTML elements-->
 <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"> <!--import google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
 <!-- ***CSS Google Fonts Import***
 
 Google Fonts : https://fonts.google.com/  is a free library of web fonts that you can use in your CSS by referencing the font's URL.
@@ -18,6 +20,38 @@ The GENERIC_NAME is optional, and is a fallback font in case the other specified
  you need quotes to use the "Open Sans" font, but not to use the Lobster font.  -->
 
 <style>
+code{
+  background-color:#dbc0c6;
+  border-radius:3px;
+  padding-top:2px;
+  padding-bottom:2px;
+  padding:0;
+}
+.box{
+  border-color:#a1ea00;
+  border-width:5px;
+  border-style:solid;
+  border-radius: 10px;
+  text-align: center;
+}
+.menu-box{
+  background-color: black;
+  padding:5px;
+}
+.green-box{
+  padding:8px;
+  margin:-7px;
+  background-color:green;
+}
+.red-box{
+  padding:8px;
+  margin:-7px;
+  background-color:red;
+}
+.head-box{
+  color:red;
+  padding:20px;
+}
   h2{
     font-family:Lobster,monospace;
   }
@@ -25,20 +59,22 @@ The GENERIC_NAME is optional, and is a fallback font in case the other specified
     color: red;
   }
   .blue-text{
-    color: blue;
-    font-family:Helvetica;
+    color: balck;
+    font-family:Raleway,sans-serif;
+    background-color:silver;
   }
   p{
     font-size: 18px;
     font-family: sans-serif;
   }
   .lite-border{
-    border-color: green;
-    border-width:10px;
+    border-color: white;
+    border-width:5px;
+    border-radius:15px;
     border-style: solid;
   }
 </style>
-<h2 class="red-text">CatPhotoApp</h2>
+<h2 class="box head-box" id="header">CatPhotoApp</h2>
 
 <p class="blue-text lite-border"> *** GENRIC_FONTS ***
 
@@ -57,11 +93,30 @@ but degrade to the sans-serif font when Helvetica wasn't available, you will spe
 
 
 </p>
+<div class="box menu-box">
+  <h4 class="box green-box">Day1</h4>
+  <h4 class="box red-box">Day2</h4>
+</div>
 
 <h2> Applying Multiple Classes</h2>
 Remember that you can apply multiple classes to an element using its class attribute, by separating each class name with a space. For example:
 &lt img class="class1 class2" &gt
 <p class="blue-text">
-  styling the app using Classes
+  styling the app using Classes and Id'
+
+  One cool thing about id attributes is that, like classes, you can style them using CSS.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance)
+<br>than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
 </p>
+<p class="box menu-box">
+  <ul>
+    <li>fonts</li>
+    <li>border width,style,color,radius</li>
+    <li>padding left-right-bottom-top,text alignment ,margin (both +- values)</li>
+
+</p>
+<code>
+  padding: 10px 20px 10px 20px;
+</code>
 </html>
