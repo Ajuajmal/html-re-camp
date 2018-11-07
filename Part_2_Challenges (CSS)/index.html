@@ -23,30 +23,35 @@ The GENERIC_NAME is optional, and is a fallback font in case the other specified
 code{
   background-color:#dbc0c6;
   border-radius:3px;
-  padding-top:2px;
-  padding-bottom:2px;
-  padding:0;
+  padding:0px;
+  margin:0px 0px -25px 0px;
+
+}
+.pad{
+  padding:10px 5px 10px 5px;
 }
 .box{
   border-color:#a1ea00;
   border-width:5px;
   border-style:solid;
   border-radius: 10px;
-  text-align: center;
 }
 .menu-box{
-  background-color: black;
+  background-color: white;
   padding:5px;
+  text-align: center;
 }
 .green-box{
   padding:8px;
   margin:-7px;
   background-color:green;
+  text-align: center;
 }
 .red-box{
   padding:8px;
   margin:-7px;
   background-color:red;
+  text-align: center;
 }
 .head-box{
   color:red;
@@ -109,14 +114,20 @@ Remember that you can apply multiple classes to an element using its class attri
 However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance)
 <br>than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
 </p>
-<p class="box menu-box">
-  <ul>
+
+  aam
+  <ul class="pad box">
     <li>fonts</li>
     <li>border width,style,color,radius</li>
     <li>padding left-right-bottom-top,text alignment ,margin (both +- values)</li>
+  </ul>
 
-</p>
+  <p class="box menu-box">
+    Instead of specifying an element's padding-top, padding-right, padding-bottom, and padding-left properties individually, you can specify them all in one line, like this:
+
 <code>
-  padding: 10px 20px 10px 20px;
+  <br>padding: 10px 20px 10px 20px;
+  <br>margin: 10px 20px 10px -20px;
 </code>
+<br>
 </html>
