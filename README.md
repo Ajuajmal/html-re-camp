@@ -18,6 +18,19 @@
 ### :calendar: 03-11-2018
 
 * css
+* basic styling
+* fonts
+
+### :calendar: 04-11-2018
+
+* practicing basic html codes and styles
+
+### :calendar: 05-11-2018
+
+* padding
+* margin
+* border
+
 
  
 =======
